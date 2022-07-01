@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    --spacing: 0.25rem;
+    --width: 8rem;
+    --height: calc(var(--width) * 2);  /* We expect the height to be the width * 2. */
+
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: rgba(0, 71, 110, 0.86);
+    color: aliceblue;
+}
+
+main#gallery {
+    margin-top: 2rem;
+    max-width: 80vw;  /* 80% of the width of the page */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.character-card {
+    margin: var(--spacing);
+    padding: var(--spacing);
+    width: var(--width);
+    min-height: var(--height);  /* This is what makes all (or most) of our character cards the same height, despite having images of different heights. */
+}
+
+.character-card:hover {
+    outline: 1px solid white;
+}
+
+.character-card > img {
+    width: var(--width);
+}
+
+.character-card > a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.character-card > a:hover {
+    color: lightgoldenrodyellow;
+    text-decoration: underline;
+}
+
+.character-card .name-first-line {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.character-card .name-second-line {
+    text-align: center;
+}

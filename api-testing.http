@@ -1,0 +1,15 @@
+GET https://xkcd.com/
+
+###
+
+GET https://xkcd.com/s/b66ed7.js
+
+###
+
+GET https://pokeapi.co/api/v2/pokemon/shroomish
+
+###
+
+GET http://gateway.marvel.com/v1/public/characters?nameStartsWith=spider&limit=100&offset=1&ts=1656695637026&apikey=6dd581e143d4eb3659beaa6938688fbe&hash=1c5eed6b23a81612bf16dcad29b29ede
+
+###
