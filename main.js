@@ -1,3 +1,6 @@
+// ES6 Modules (ECMAScript 6, 2015...ES2022)
+import { renderGalleryView } from "./view.js"
+
 const CORSProxy = "https://corsproxy.io/?"
 
 // GET (download)
@@ -19,8 +22,10 @@ document.body.addEventListener("keydown", event => {
 
 console.log("LOG #3")
 
+
+
 function searchMarvelCharacters (searchTerm, limit=100, offset=1) {
-    const apiBaseURL = "http://gateway.marvel.com/v1/public"
+    const apiBaseURL = "https://gateway.marvel.com/v1/public"
     const endpoint = "/characters?"
 
     const timestamp = Date.now()
